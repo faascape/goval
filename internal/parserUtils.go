@@ -355,15 +355,17 @@ func compareInt(val1 int, val2 int, operation string) bool {
 }
 
 func compareFloat(val1 float64, val2 float64, operation string) bool {
+	f1 := math.Round(val1*1000000) / 1000000
+	f2 := math.Round(val2*1000000) / 1000000
 	switch operation {
 	case "<":
-		return val1 < val2
+		return f1 < f2
 	case "<=":
-		return val1 <= val2
+		return f1 <= f2
 	case ">":
-		return val1 > val2
+		return f1 > f2
 	case ">=":
-		return val1 >= val2
+		return f1 >= f2
 	}
 	panic(fmt.Errorf("syntax error: unsupported operation %q", operation))
 }
