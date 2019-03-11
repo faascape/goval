@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/maja42/goval"
+	"github.com/faascape/goval"
 	"math/rand"
 	"os"
 	"os/signal"
