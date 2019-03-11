@@ -3,7 +3,7 @@ package goval
 import (
 	"errors"
 
-	"github.com/maja42/goval/internal"
+	"github.com/faascape/goval/internal"
 )
 
 // EvalConfig specifies authorized type for evaluation result
@@ -50,7 +50,6 @@ func (e *Evaluator) Evaluate(str string, variables map[string]interface{}, funct
 	if err = e.checkResultType(result); err != nil {
 		return nil, err
 	}
-
 	return result, nil
 }
 
