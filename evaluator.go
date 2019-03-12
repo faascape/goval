@@ -3,7 +3,7 @@ package goval
 import (
 	"errors"
 
-	"github.com/faascape/goval/internal"
+	"github.com/faascape/goval/v2/internal"
 )
 
 // EvalConfig specifies authorized type for evaluation result
